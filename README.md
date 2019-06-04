@@ -57,3 +57,19 @@ catkin_make
 source ~/catkin_ws/devel/setup.bash
 ```
 
+## Alias in der .bashrc anlegen ##
+
+Damit alle Befehle nicht bei jedem neuen Terminal eingegeben werden müssen, bietet es sich an, ein alias Befehl in der `.bashrc` anzulegen.
+
+``` shell
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+echo "alias ros='cd ~/catkin_ws && source devel/setup.bash'" >> ~/.bashrc
+source ~/.bashrc
+```
+
+Jetzt kann mit dem Befehl `ros` direkt in den Catkin-Ordner gewechselt werden.
+Zusätzlich werden auch alle nötigen Setup-Dateien gesourced.
+
+## Pub/Sub Beispiel ##
+
+Ein Beispiel für einen einfachen Publisher und Subscriber findet sich [hier](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29).
