@@ -70,6 +70,35 @@ source ~/.bashrc
 Jetzt kann mit dem Befehl `ros` direkt in den Catkin-Ordner gewechselt werden.
 Zusätzlich werden auch alle nötigen Setup-Dateien gesourced.
 
+## QtCreator als IDE für ROS einrichten ##
+
+Zum Einstieg ist es leichter eine passend eingerichtete IDE zur Programmierung in ROS einzusetzen, darum wird hier die Einrichtung von QtCreator beschrieben.
+Die genaue Beschreibung findet sich [hier](https://wiki.ros.org/IDEs#QtCreator) im ROS-Wiki.
+
+Zunächst ist es wichtig, dass QtCreator aus einem Terminal (in dem alle Files schon gesourced wurden) gestartet wird.
+Ein passender Starter für die NetBoot Maschienen befindet sich in diesem Repo (`qtcreator.desktop`).
+Dieser Starter kann einfach auf den Desktop kopiert werden:
+
+```shell
+cp qtcreator.desktop ~/Desktop/
+```
+
+Bevor QtCreator verwendet werden kann, muss schon ein catkin-Workspace mit mindestens einem Package existieren.
+Jedes Package kann dann später einzeln im QtCreator geöffnet werden.
+
+Ist dies der Fall, so wird der QtCreator über den vorher angelegten Starter geöffnet.
+Danach kann auf der Willkommen-Seite 'Open Project' ausgewählt werden.
+
+[Open Project](./images/qt_open.png "Qt Projekt öffnen")
+
+Als Projektdatei wird dann die `CMakeLists.txt` aus dem Ordner `catkin_ws/src/<package_name>` geöffnet.
+
+[Open Cmake](./images/qt_openProject.png "CMakeLists öffnen")
+
+Anschließend wird auf den `Run CMake` Button gedrückt, danach wird der Vorgang mit `Finish` abgeschlossen.
+
+Jetzt sollte das Projekt passend konfiguriert sein, um mit ROS arbeiten zu können.
+
 ## Pub/Sub Beispiel ##
 
 Ein Beispiel für einen einfachen Publisher und Subscriber findet sich [hier](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29).
