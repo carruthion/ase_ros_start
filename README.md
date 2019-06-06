@@ -89,15 +89,17 @@ Jedes Package kann dann später einzeln im QtCreator geöffnet werden.
 Ist dies der Fall, so wird der QtCreator über den vorher angelegten Starter geöffnet.
 Danach kann auf der Willkommen-Seite 'Open Project' ausgewählt werden.
 
-[Open Project](./images/qt_open.png "Qt Projekt öffnen")
+![Open Project](./images/qt_open.png "Qt Projekt öffnen")
 
 Als Projektdatei wird dann die `CMakeLists.txt` aus dem Ordner `catkin_ws/src/<package_name>` geöffnet.
 
-[Open Cmake](./images/qt_openProject.png "CMakeLists öffnen")
+![Open Cmake](./images/qt_openProject.png "CMakeLists öffnen")
 
 Anschließend wird auf den `Run CMake` Button gedrückt, danach wird der Vorgang mit `Finish` abgeschlossen.
 
 Jetzt sollte das Projekt passend konfiguriert sein, um mit ROS arbeiten zu können.
+
+![Run CMake](./images/qt_cmake.png "Run CMake")
 
 ## Pub/Sub Beispiel ##
 
